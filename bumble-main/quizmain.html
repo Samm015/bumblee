@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizmain.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <a href="home.html" class="logo">Bumble.</a>
+        <nav class="navbar">
+            <a href="home.html" id="home-link" style="--i:1;">Home</a>
+            <a href="quizmain.html" id="play-game-link" style="--i:2;">Play Game</a>
+            <a href="https://heyzine.com/flip-book/1eb95ff355.html" id="research-link" style="--i:3;">Our Research</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfy-emYLC11PTbGl_PB0XRjPoHx1dt9VFHgntXC9qlb0TtO8A/viewform?usp=sf_link" id="survey-link" style="--i:4;">Survey Questionnaire</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="mode-container">
+            <div class="mode">
+                <p><b> Critical Analysis of Text</b> </p>
+                <a href="calevels/caotlvls.html" class="btn">Play</a>
+            </div>
+            <div class="mode">
+             <p> <b>English Vocabulary  </b></p>
+             <a href="vocablevels/vlevels.html" class="btn">Play</a>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+<script>
+    // JavaScript to handle the active state of navbar links
+    const navbarLinks = document.querySelectorAll('.navbar a');
+
+    navbarLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navbarLinks.forEach(navLink => navLink.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Selector</title>
+    <link rel="stylesheet" href="vlevels.css">
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo">Bumble.</a>
+        <nav class="navbar">
+            <a href="home.html" id="home-link" style="--i:1;">Home</a>
+            <a href="quizmain.html" id="play-game-link" style="--i:2;">Play Game</a>
+            <a href="https://heyzine.com/flip-book/1eb95ff355.html" id="research-link" style="--i:3;">Our Research</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfy-emYLC11PTbGl_PB0XRjPoHx1dt9VFHgntXC9qlb0TtO8A/viewform?usp=sf_link" id="survey-link" style="--i:4;">Survey Questionnaire</a>
+        </nav>
+    </header>
+
+    <div class="level-selector">
+        <div class="level-row">
+            <a href="Vlevel1.html">
+                <button class="level-button">Level 1</button>
+            </a>
+            <a href="Vlevel2.html">
+                <button class="level-button">Level 2</button>
+            </a>
+            <a href="Vlevel3.html">
+                <button class="level-button">Level 3</button>
+            </a>
+            
+        </div>
+        <div class="level-row">
+            <a href="Vlevel4.html">
+                <button class="level-button">Level 4</button>
+            </a>
+            <a href="Vlevel5.html">
+                <button class="level-button">Level 5</button>
+            </a>
+            <a href="Vlevel6.html">
+                <button class="level-button">Level 6</button>
+            </a>
+        </div>
+        <div class="level-row">
+            <a href="Vlevel7.html">
+                <button class="level-button1">Level 7</button>
+            </a>
+        </div>
+    </div>
+    <script>
+        // JavaScript to handle the active state of navbar links
+        const navbarLinks = document.querySelectorAll('.navbar a');
+
+        navbarLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navbarLinks.forEach(navLink => navLink.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #985b10;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 36px;
+    color: #ffd966;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ffd966;
+}
+
+.home {
+    padding-top: 150px;
+    text-align: center;
+}
+.level-selector {
+    text-align: center;
+    margin-top: 240px; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.level-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.level-button1 {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.level-button:hover {
+    background-color: black;
+}
+
+.level-button1:hover {
+    background-color: black;
+}
